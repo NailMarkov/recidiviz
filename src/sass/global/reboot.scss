@@ -1,3 +1,4 @@
+@use "../variables" as var;
 *,
 *::before,
 *::after {
@@ -14,10 +15,10 @@ body {
 html {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Inter", "Arial", sans-serif;
-  color: #333333;
+  font-size: var.$fz-default;
+  line-height: var.$fh-default;
+  font-family: var.$ff-public-sans;
+  color: var.$color-cello-op08;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
